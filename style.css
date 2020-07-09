@@ -28,7 +28,7 @@ body {
 .description-box {
     margin: 50px auto auto auto;
     width: auto;
-    max-width: 900px;
+    max-width: 807px;
     color: #f9f5ff;
     background-color: rgba(52, 126, 229, 0.75);
     padding: 20px 30px;
@@ -82,4 +82,25 @@ body {
 .footer a:hover {
     color: white;
     text-decoration: none;
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 960px) {
+    .description-box {
+        box-shadow: 8px 8px grey;
+        margin: auto 18px;
+        font-size: 1.25rem;
+    }
+
+    .contents-box {
+        margin-left: auto;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .contents-box div {
+        font-size: 1.25rem;
+        min-height: 45vh;
+        box-shadow: none;
+    }
 }
