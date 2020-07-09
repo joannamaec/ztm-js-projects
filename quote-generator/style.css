@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #ede9f3;
+    background-image: url("data:image/svg+xml,%3Csvg width='48' height='64' viewBox='0 0 48 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M48 28v-4L36 12 24 24 12 12 0 24v4l4 4-4 4v4l12 12 12-12 12 12 12-12v-4l-4-4 4-4zM8 32l-6-6 10-10 10 10-6 6 6 6-10 10L2 38l6-6zm12 0l4-4 4 4-4 4-4-4zm12 0l-6-6 10-10 10 10-6 6 6 6-10 10-10-10 6-6zM0 16L10 6 4 0h4l4 4 4-4h4l-6 6 10 10L34 6l-6-6h4l4 4 4-4h4l-6 6 10 10v4L36 8 24 20 12 8 0 20v-4zm0 32l10 10-6 6h4l4-4 4 4h4l-6-6 10-10 10 10-6 6h4l4-4 4 4h4l-6-6 10-10v-4L36 56 24 44 12 56 0 44v4z' fill='%236f5992' fill-opacity='0.33' fill-rule='evenodd'/%3E%3C/svg%3E");
+    color: #000000;
+    font-family: 'Arvo', serif;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-container {
+    width: auto;
+    max-width: 900px;
+    background-color: rgba(204, 217, 255, 0.8);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 10px rgba(82, 82, 122, 0.6);
+}
+
+.quote-text {
+    font-size: 2.75rem;
+}
+
+.quote-text-long {
+    font-size: 2rem;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+    font-size: 35px;
+}
+
+.quote-author {
+    font-family: 'Lora', serif;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quote-button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: rgb(117, 117, 163);
+    padding: 0.5rem 1.8rem;
+    font-family: 'Fondamento', cursive;
+    box-shadow: 0 0.3rem rgba(179, 179, 204, 0.6)
+}
+
+.quote-button:hover {
+    filter: brightness(110%);
+    color: rgb(41, 41, 61);
+}
+
+.quote-button:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.6);
+}
+
+.twitter-button:hover {
+    color: #38a1f3;
+}
+
+.fa-twitter {
+    font-size: 1.5rem;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid rgb(117, 117, 163);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+    .quote-container {
+        margin: auto 18px;
+    }
+
+    .quote-text {
+        font-size: 2.25rem;
+    }
+}
