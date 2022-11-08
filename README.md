@@ -10,4 +10,4 @@ Take your virtual tour of [ZTM Academy](https://zerotomastery.io/) today!
 
 This repository contains my personal projects coded along while taking courses at ZTM Academy or submissions to the coding challenges.
 
-My homepage can be found at https://jmjcabuyadao.github.io and this project is found at https://jmjcabuyadao.github.io/ztm-js-projects.
+My homepage can be found at https://joannamaec.github.io and this project is found at https://joannamaec.github.io/ztm-js-projects.
